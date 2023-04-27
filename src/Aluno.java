@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Aluno implements Comparable<Aluno>{
@@ -8,8 +9,16 @@ public class Aluno implements Comparable<Aluno>{
 
 
 
+    public Aluno(){
+        notas = new ArrayList<>();
+    }
+
     public String getNome(){
         return nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
     }
 
     public void setNotas(List<Double> notas){
